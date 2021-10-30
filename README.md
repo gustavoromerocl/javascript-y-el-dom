@@ -19,3 +19,12 @@ document.getElementsByClassName('class') => obtiene los elementos que coincidan 
 
 document.getElementsByTagName('etiqueta'); => obtiene los elementos que coincidan con la etiqueta
 
+document.querySelector('query css'); => obtiene un elemento de la consulta
+
+document.querySelectorAll('li'); => obtiene todos los elementos que coincidan en una lista
+
+#CSS
+
+tag:nth-child(odd) => obtiene los elementos hijos pares
+tag:nth-child(even) => obtiene los elementos hijos inpares
+
