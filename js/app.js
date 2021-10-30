@@ -5,10 +5,16 @@ title.innerHTML = "Cursos";
 const description = document.getElementById('description');
 description.innerHTML = "Listado de cursos";
 
-const items = document.getElementsByClassName('list-group-item');
+//const items = document.getElementsByClassName('list-group-item');
 //console.log(items);
 
+const items = document.getElementsByTagName('li');
+
 for (let i = 0; i < items.length; i++) {
-  const element = items[i];
-  console.log(element);
+  if(i % 2 == 0){
+    const element = items[i];
+    element.style.background = '#f2f2f2'
+  }
+  
+  //console.log(element);
 }
