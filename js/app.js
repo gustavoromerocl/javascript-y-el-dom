@@ -44,16 +44,26 @@ const multiOddElements = document.querySelectorAll('li:nth-child(odd)');
 /**ELEMENTOS HIJOS */
 
 const list = document.querySelector('ul');
-console.log(list.childElementCount);
-console.log(list.children);
-console.log(list.firstElementChild);
-console.log(list.lastElementChild);
+//console.log(list.childElementCount);
+//console.log(list.children);
+//console.log(list.firstElementChild);
+//console.log(list.lastElementChild);
 
-console.log(list.firstElementChild.innerHTML);
-console.log(list.lastElementChild.innerHTML);
+//console.log(list.firstElementChild.innerHTML);
+//console.log(list.lastElementChild.innerHTML);
 
 
 for (let i = 0; i < list.children.length; i++) {
     const element = list.children[i];
-    console.log(element);
+    //console.log(element);
 }
+
+/**ELEMENTOS HERMANOS */
+
+const brotherElement = document.querySelector('div.row > ul.list-group > li');
+console.log(brotherElement.parentElement);//padre
+console.log(brotherElement.parentElement.parentElement);//abuelo
+console.log(brotherElement.nextElementSibling);//hermano siguiente
+
+const lastElement = document.getElementById('last-course');
+console.log(lastElement.previousElementSibling);//hermano anterior

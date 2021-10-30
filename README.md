@@ -33,6 +33,12 @@ element.firstElementChild => retorna el primer hijo de la lista
 
 element.lastElementChild => retorna el ultimo hijo del elemento
 
+element.parentElement => retorna el padre el elemento
+
+element.nextElementSibling => retorna el hermano siguiente del elemento
+
+Element.previousElementSibling => retorna el hermano anterior del elemento
+
 #CSS
 
 tag:nth-child(odd) => obtiene los elementos hijos pares
