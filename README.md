@@ -39,6 +39,9 @@ element.nextElementSibling => retorna el hermano siguiente del elemento
 
 Element.previousElementSibling => retorna el hermano anterior del elemento
 
+element.childNodes => retorna los nodos que contiene el elemento
+element.childNodes.length => retorna al acantidad de nodos que contiene el elemento
+
 #CSS
 
 tag:nth-child(odd) => obtiene los elementos hijos pares

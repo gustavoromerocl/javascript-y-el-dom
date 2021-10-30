@@ -61,9 +61,16 @@ for (let i = 0; i < list.children.length; i++) {
 /**ELEMENTOS HERMANOS */
 
 const brotherElement = document.querySelector('div.row > ul.list-group > li');
-console.log(brotherElement.parentElement);//padre
-console.log(brotherElement.parentElement.parentElement);//abuelo
-console.log(brotherElement.nextElementSibling);//hermano siguiente
+//console.log(brotherElement.parentElement);//padre
+//console.log(brotherElement.parentElement.parentElement);//abuelo
+//console.log(brotherElement.nextElementSibling);//hermano siguiente
 
 const lastElement = document.getElementById('last-course');
-console.log(lastElement.previousElementSibling);//hermano anterior
+//console.log(lastElement.previousElementSibling);//hermano anterior
+
+/**NODOS */
+
+const nodo = document.getElementById('first-course');
+console.log(nodo.childElementCount);
+console.log(nodo.childNodes);
+console.log(nodo.childNodes.length);
