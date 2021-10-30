@@ -10,3 +10,5 @@ document => objeto que contiene la página html
 document.getElementById('id'); => obtiene el elemento html con el id indicado
 
 variable.innerHTML => permite cambiar el valor contenido en las etiquetas html
+
+document.getElementsByClassName => obtiene los elementos que coincidan con la clase indicada
