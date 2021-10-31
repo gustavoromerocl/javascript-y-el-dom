@@ -75,5 +75,31 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', function(){
   console.log("cambio de valor");
 })
+
+/**PROPAGACIÓN DE EVENTOS */
+
+/*
+const element = document.querySelector('li'); 
+const list = document.querySelector('ul');
+const divRow = document.querySelector('.row');
+const divContainer = document.querySelector('.container');
+const body = document.querySelector('body');
+
+element.addEventListener('click', show_messages);
+list.addEventListener('click', show_messages);
+divRow.addEventListener('click', show_messages);
+divContainer.addEventListener('click', show_messages);
+body.addEventListener('click', show_messages);
+*/
+
+for(let element of document.querySelectorAll('*')){
+  element.addEventListener('click', show_messages);
+}
+
+function show_messages(e){
+  console.log("Elemento actual: " + this.tagName)
+  console.log("Elemento que disparó el evento: " + e.target.tagName);
+}
+
 });
 
