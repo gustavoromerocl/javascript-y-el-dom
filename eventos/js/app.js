@@ -35,3 +35,9 @@ button.addEventListener('mouseenter', function(){
 button.addEventListener('mouseout', function(){
   this.className = 'btn btn-primary';
 });
+
+/** SET TIME OUT */
+
+window.setTimeout(function(a1, a2, a3){
+  console.log(a1,a2,a3);
+}, 3000, 'argumento1', 'argumento2', 'argmuento3');
