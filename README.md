@@ -68,6 +68,7 @@ ev.target => hace referencia al objeto que desencadena el evento, tambien es pos
 ev.key => hace referencia a la tecla que fue presionada
 ev.keyCode => hace referencia al codigo que identifca la tecla
 ev.preventDefault() => Evita que la pagina recargue cuando se envia un formulario
+ev.stopPropagation() => detiene la propagación del evento en el arbol del dom
 
 setTimeout => funcion del objeto window que ejecuta una funcion despues de determinado tiempo
 addEventListener => agrega un detector de eventos al elemento, recibe un callback con el argmumento event

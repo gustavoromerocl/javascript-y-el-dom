@@ -90,16 +90,32 @@ list.addEventListener('click', show_messages);
 divRow.addEventListener('click', show_messages);
 divContainer.addEventListener('click', show_messages);
 body.addEventListener('click', show_messages);
-*/
+
 
 for(let element of document.querySelectorAll('*')){
   element.addEventListener('click', show_messages);
 }
-
+*/
 function show_messages(e){
   console.log("Elemento actual: " + this.tagName)
   console.log("Elemento que disparó el evento: " + e.target.tagName);
 }
 
+
+/** DETENER PROPAGACIÓN */
+
+const element = document.querySelector('li'); 
+const list = document.querySelector('ul');
+
+element.addEventListener('click', function(e){
+  console.log("click sobre el elemento");
+  e.stopPropagation();
 });
+list.addEventListener('click',function(){
+  console.log("click sobre la lista");
+});
+
+});
+
+
 
