@@ -51,5 +51,17 @@ variable.innerHTML => Es un atributo de lectura y escritura del html en un eleme
 
 variable.textContent => obtiene el texto contenido en el nodo del html
 
+**** EVENTOS ****
+
+#tipos de eventos
+
+click
+dblclick
+
+
+addEventListener => agrega un detector de eventos al elemento
+
+
+
 
 
