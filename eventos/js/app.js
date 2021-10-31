@@ -1,3 +1,5 @@
+/**EVENTOS DE CLICK */
+
 const button = document.querySelector('.btn.btn-primary');
 const title = document.getElementById('title');
 const description = document.getElementById('description');
@@ -23,3 +25,13 @@ button.addEventListener('click', function(e){
     //this.textContent = 'Ocultar';
   }
 })
+
+/** EVENTOS DE MOUSE */
+
+button.addEventListener('mouseenter', function(){
+  this.className = 'btn btn-danger';
+});
+
+button.addEventListener('mouseout', function(){
+  this.className = 'btn btn-primary';
+});
