@@ -58,8 +58,12 @@ variable.textContent => obtiene el texto contenido en el nodo del html
 click
 dblclick
 
+#atributos del evento
 
-addEventListener => agrega un detector de eventos al elemento
+ev.target => hace referencia al objeto que desencadena el evento, tambien es posible acceder usando la palabra this
+
+
+addEventListener => agrega un detector de eventos al elemento, recibe un callback con el argmumento event
 
 
 
