@@ -15,8 +15,6 @@ element.style => modifica la propiedad de style css
 
 document.getElementById('id'); => obtiene el elemento html con el id indicado
 
-variable.innerHTML => permite cambiar el valor contenido en las etiquetas html, tmabién puedeser utilizado de solo lectura
-
 document.getElementsByClassName('class') => obtiene los elementos que coincidan con la clase indicada
 
 document.getElementsByTagName('etiqueta'); => obtiene los elementos que coincidan con la etiqueta
@@ -47,7 +45,11 @@ element.childNodes.length => retorna al acantidad de nodos que contiene el eleme
 tag:nth-child(odd) => obtiene los elementos hijos pares
 tag:nth-child(even) => obtiene los elementos hijos inpares
 
+**** ATRIBUTOS ****
 
+variable.innerHTML => Es un atributo de lectura y escritura del html en un elemento 
+
+variable.textContent => obtiene el texto contenido en el nodo del html
 
 
 
