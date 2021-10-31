@@ -57,13 +57,18 @@ variable.textContent => obtiene el texto contenido en el nodo del html
 
 click
 dblclick
+keydown
 
 #atributos del evento
 
 ev.target => hace referencia al objeto que desencadena el evento, tambien es posible acceder usando la palabra this
+ev.key => hace referencia a la tecla que fue presionada
+keyCode => hace referencia al codigo que identifca la tecla
 
 setTimeout => funcion del objeto window que ejecuta una funcion despues de determinado tiempo
 addEventListener => agrega un detector de eventos al elemento, recibe un callback con el argmumento event
+
+
 
 
 

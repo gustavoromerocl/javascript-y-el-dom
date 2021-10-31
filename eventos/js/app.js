@@ -3,7 +3,7 @@
 const button = document.querySelector('.btn.btn-primary');
 const title = document.getElementById('title');
 const description = document.getElementById('description');
-console.log(description);
+//console.log(description);
 //console.log(button);
 
 /*button.addEventListener('dblclick', function(){
@@ -39,5 +39,15 @@ button.addEventListener('mouseout', function(){
 /** SET TIME OUT */
 
 window.setTimeout(function(a1, a2, a3){
-  console.log(a1,a2,a3);
+  //console.log(a1,a2,a3);
 }, 3000, 'argumento1', 'argumento2', 'argmuento3');
+
+/**EVENTOS DEL TECLADO */
+
+const input = document.getElementById('input');
+console.log(input);
+
+input.addEventListener('keydown', function(e){
+  //console.log('tecla presionada');
+  console.log(`tecla presionada: ${e.key} con un codigo ${e.keyCode}`);
+})
