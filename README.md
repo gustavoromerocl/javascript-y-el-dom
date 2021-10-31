@@ -55,9 +55,11 @@ variable.textContent => obtiene el texto contenido en el nodo del html
 
 #tipos de eventos
 
-click
-dblclick
-keydown
+click => evento del mouse
+dblclick => evento del mouse
+keydown => evento de teclado
+submit => evento de formulario
+change => evento de cambio de valor
 
 #atributos del evento
 

@@ -64,3 +64,11 @@ form.addEventListener('submit', function(e){
 
   console.log(tittle, description);
 });
+
+/**EVENTOS POR CAMBIO DE VALOR */
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', function(){
+  console.log("cambio de valor");
+})
