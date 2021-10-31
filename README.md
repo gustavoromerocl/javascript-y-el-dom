@@ -60,6 +60,7 @@ dblclick => evento del mouse
 keydown => evento de teclado
 submit => evento de formulario
 change => evento de cambio de valor
+DOMContentLoaded => detecta cuando el DOM esta cargado completamente
 
 #atributos del evento
 

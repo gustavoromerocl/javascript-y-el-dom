@@ -1,4 +1,7 @@
-/**EVENTOS DE CLICK */
+document.addEventListener('DOMContentLoaded', function(){
+console.log('El dom ya fue construido');
+
+  /**EVENTOS DE CLICK */
 
 const button = document.querySelector('.btn.btn-primary');
 const title = document.getElementById('title');
@@ -72,3 +75,5 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', function(){
   console.log("cambio de valor");
 })
+});
+
