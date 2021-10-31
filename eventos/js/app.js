@@ -51,3 +51,16 @@ input.addEventListener('keydown', function(e){
   //console.log('tecla presionada');
   console.log(`tecla presionada: ${e.key} con un codigo ${e.keyCode}`);
 })
+
+/**EVENTO SUBMIT*/
+
+const form = document.getElementById('course-form');
+console.log(form);
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  let tittle = document.getElementById('title-form').value;
+  let description = document.getElementById('description-form').value;
+
+  console.log(tittle, description);
+});

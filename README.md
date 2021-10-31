@@ -63,10 +63,12 @@ keydown
 
 ev.target => hace referencia al objeto que desencadena el evento, tambien es posible acceder usando la palabra this
 ev.key => hace referencia a la tecla que fue presionada
-keyCode => hace referencia al codigo que identifca la tecla
+ev.keyCode => hace referencia al codigo que identifca la tecla
+ev.preventDefault() => Evita que la pagina recargue cuando se envia un formulario
 
 setTimeout => funcion del objeto window que ejecuta una funcion despues de determinado tiempo
 addEventListener => agrega un detector de eventos al elemento, recibe un callback con el argmumento event
+
 
 
 
