@@ -47,13 +47,17 @@ tag:nth-child(even) => obtiene los elementos hijos inpares
 
 **** ATRIBUTOS ****
 
-variable.innerHTML => Es un atributo de lectura y escritura del html en un elemento 
+element.innerHTML => Es un atributo de lectura y escritura del html en un elemento 
 
-variable.textContent => obtiene el texto contenido en el nodo del html
+element.textContent => obtiene el texto contenido en el nodo del html
 
-variable.createElement => crea un elemento html en el DOM
+element.createElement => crea un elemento html en el DOM
 
-variable.appendChild => Agrega un hijo al elemento 
+element.appendChild => Agrega un hijo al elemento 
+
+element.removeChild => Elimina el elemento hijo indicado
+
+
 
 
 **** EVENTOS ****

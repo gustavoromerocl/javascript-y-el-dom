@@ -1,8 +1,10 @@
 const row = document.querySelector('.row');
 const form = document.getElementById('course-form');
+let div = null;
 
+/**AGREGAR ELEMENTOS AL DOM */
 function createCard(title, description){
-  let div = document.createElement('div');
+  div = document.createElement('div');
   div.className = 'col-sm-6 col-md-4';
 
   let thumbnail = document.createElement('div');
@@ -23,6 +25,7 @@ function createCard(title, description){
   a.textContent = 'Eliminar';
   a.className = 'btn btn-danger';
 
+  p2.addEventListener('click', deleteCard)
 
   p2.appendChild(a);
   caption.appendChild(h3);
@@ -34,6 +37,7 @@ function createCard(title, description){
   row.appendChild(div);
 }
 
+/**CREAR ELEMENTO NUEVO */
 function createCardByInnerHtml(title, description){
   let html = `<div class="col-sm-6 col-md-4"> 
                 <div class="thumbnail">
@@ -58,3 +62,18 @@ form.addEventListener('submit', function(e){
   createCard(tittle, description);
 });
 
+/**ELIMINAR ELEMENTOS */
+
+function deleteCard(e){
+  //El padre y le elemento a eliminar
+  let ancestor = get_ancestors(e.target, 4);
+  row.removeChild(ancestor);
+}
+
+function get_ancestors(ancestor, level){
+  if(level === 0){
+    return ancestor
+  }
+  level--;
+  return get_ancestors(ancestor.parentElement, level)
+}
