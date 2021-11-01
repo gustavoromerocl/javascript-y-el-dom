@@ -51,6 +51,11 @@ variable.innerHTML => Es un atributo de lectura y escritura del html en un eleme
 
 variable.textContent => obtiene el texto contenido en el nodo del html
 
+variable.createElement => crea un elemento html en el DOM
+
+variable.appendChild => Agrega un hijo al elemento 
+
+
 **** EVENTOS ****
 
 #tipos de eventos
